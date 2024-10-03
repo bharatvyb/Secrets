@@ -4,6 +4,37 @@ Confidential Information Manager PWA
 
 Here's the summary of how we can implement the "Secrets" app:
 
+/secrets-app
+|-- index.html          (Home Page)
+|-- banks.html          (Banks Page)
+|-- cards.html          (Cards Page)
+|-- websites.html       (Websites Page)
+|-- apps.html           (Apps Page)
+|-- others.html         (Others Page)
+|-- settings.html       (Settings Page)
+|-- manifest.json       (PWA Manifest)
+|-- service-worker.js   (Service Worker)
+|-- styles/
+|   |-- common.css
+|   |-- index.css
+|   |-- banks.css
+|   |-- cards.css
+|   |-- websites.css
+|   |-- apps.css
+|   |-- others.css
+|   |-- settings.css
+|-- scripts/
+|   |-- index.js
+|   |-- banks.js
+|   |-- cards.js
+|   |-- websites.js
+|   |-- apps.js
+|   |-- others.js
+|   |-- settings.js
+|-- modal/
+|   |-- modal.css
+|   |-- modal.js
+
 ### **1. App Structure:**
 - **Home Page:** Will serve as the main navigation hub with a menu linking to different sections: Banks, Cards, Websites, Apps, Others.
 - **Menu Items:** 

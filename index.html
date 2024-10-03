@@ -3,9 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secrets App</title>
+    <title>Secrets App - Home</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="scripts/index.js" defer></script>
 </head>
 <body>
-    <h1>Welcome to Secrets App!</h1>
+    <!-- Header Section -->
+    <header>
+        <h1>Secrets App</h1>
+    </header>
+
+    <!-- Main Content Area with Card View -->
+    <main id="content-area">
+        <div class="home-cards">
+            <div class="card">
+                <h3 class="card-title">Banks</h3>
+                <p class="card-content">Manage your bank account details securely.</p>
+                <a href="banks.html" class="action-btn">View Banks</a>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">Cards</h3>
+                <p class="card-content">Store and access your card information safely.</p>
+                <a href="cards.html" class="action-btn">View Cards</a>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">Sites</h3>
+                <p class="card-content">Secure your website credentials and passwords.</p>
+                <a href="sites.html" class="action-btn">View Sites</a>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">Apps</h3>
+                <p class="card-content">Keep track of your app credentials in one place.</p>
+                <a href="apps.html" class="action-btn">View Apps</a>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">Others</h3>
+                <p class="card-content">Store any other confidential information.</p>
+                <a href="others.html" class="action-btn">View Others</a>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">Settings</h3>
+                <p class="card-content">Manage dropdowns and customize your app.</p>
+                <a href="settings.html" class="action-btn">Go to Settings</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bottom Navigation Menu -->
+    <footer>
+        <nav class="bottom-menu">
+            <a href="banks.html" class="bottom-menu-item" id="menu-banks">🏦<span class="menu-label">Banks</span></a>
+            <a href="cards.html" class="bottom-menu-item" id="menu-cards">💳<span class="menu-label">Cards</span></a>
+            <a href="sites.html" class="bottom-menu-item" id="menu-sites">🌐<span class="menu-label">Sites</span></a>
+            <a href="apps.html" class="bottom-menu-item" id="menu-apps">📱<span class="menu-label">Apps</span></a>
+            <a href="others.html" class="bottom-menu-item" id="menu-others">📁<span class="menu-label">Others</span></a>
+            <a href="settings.html" class="bottom-menu-item" id="menu-settings">⚙️<span class="menu-label">Settings</span></a>
+        </nav>
+    </footer>
+
+    <!-- Register Service Worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(() => console.log('Service Worker Registered'))
+                .catch(error => console.log('Service Worker Registration Failed:', error));
+        }
+    </script>
 </body>
 </html>

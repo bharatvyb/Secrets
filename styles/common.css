@@ -1,0 +1,130 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #127780;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #105c5e;
+    padding: 10px 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-item:hover,
+.menu-item.active {
+    background-color: #0e4e4f;
+    border-bottom: 3px solid #127780;
+    border-radius: 4px 4px 0 0;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+/* Card Styles */
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    background: #f0f9f9;
+}
+
+/* Buttons */
+.action-btn {
+    background-color: #127780;
+    color: white;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    background-color: #0e5e5f;
+}
+
+/* Bottom Navigation Menu */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #333;
+    padding: 10px 0;
+}
+
+.bottom-menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.bottom-menu-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.bottom-menu-item.active,
+.bottom-menu-item:hover {
+    background-color: #127780;
+    border-radius: 4px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secrets App - Settings</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/settings.css">
+    <link rel="stylesheet" href="modal/modal.css">
+    <script src="modal/modal.js" defer></script>
+    <script src="scripts/settings.js" defer></script>
+    <script>
+        console.log("Settings HTML Loaded!"); // Inline log to confirm HTML is loading properly
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Settings</h1>
+    </header>
+    <main id="settings-content">
+        <button id="customize-menu-btn" class="action-btn">Customize Menu Bar</button>
+    </main>
+
+    <!-- Modal Popup for Customizing Menu -->
+    <div id="customize-modal" class="modal hidden show"> <!-- Ensure the ID matches exactly -->
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Customize Menu Bar</h2>
+            <form id="menu-customization-form">
+                <div class="form-group">
+                    <label for="banks-emoji">Banks</label>
+                    <input type="text" id="banks-emoji" class="emoji-input" maxlength="2" placeholder="🏦">
+                </div>
+                <div class="form-group">
+                    <label for="cards-emoji">Cards</label>
+                    <input type="text" id="cards-emoji" class="emoji-input" maxlength="2" placeholder="💳">
+                </div>
+                <div class="form-group">
+                    <label for="sites-emoji">Sites</label>
+                    <input type="text" id="sites-emoji" class="emoji-input" maxlength="2" placeholder="🌐">
+                </div>
+                <div class="form-group">
+                    <label for="apps-emoji">Apps</label>
+                    <input type="text" id="apps-emoji" class="emoji-input" maxlength="2" placeholder="📱">
+                </div>
+                <div class="form-group">
+                    <label for="others-emoji">Others</label>
+                    <input type="text" id="others-emoji" class="emoji-input" maxlength="2" placeholder="📁">
+                </div>
+                <div class="form-group">
+                    <label for="settings-emoji">Settings</label>
+                    <input type="text" id="settings-emoji" class="emoji-input" maxlength="2" placeholder="⚙️">
+                </div>
+            </form>
+            <div class="modal-actions">
+                <button type="button" id="save-menu-btn" class="modal-btn">Save</button>
+                <button type="button" id="cancel-menu-btn" class="modal-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation Menu -->
+    <footer>
+        <nav class="bottom-menu">
+            <a href="banks.html" class="bottom-menu-item" id="menu-banks">🏦<span class="menu-label">Banks</span></a>
+            <a href="cards.html" class="bottom-menu-item" id="menu-cards">💳<span class="menu-label">Cards</span></a>
+            <a href="sites.html" class="bottom-menu-item" id="menu-sites">🌐<span class="menu-label">Sites</span></a>
+            <a href="apps.html" class="bottom-menu-item" id="menu-apps">📱<span class="menu-label">Apps</span></a>
+            <a href="others.html" class="bottom-menu-item" id="menu-others">📁<span class="menu-label">Others</span></a>
+            <a href="settings.html" class="bottom-menu-item" id="menu-settings">⚙️<span class="menu-label">Settings</span></a>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* Index-Specific Styles */
+header h1 {
+    font-size: 28px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Home Page Card View */
+.home-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 80px;  /* Added margin to prevent overlap with footer */
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 15px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card-title {
+    font-size: 18px;
+    color: #127780;
+    margin-bottom: 10px;
+}
+
+.card-content {
+    font-size: 16px;
+    margin: 10px 0 15px 0;
+}
+
+.action-btn {
+    display: inline-block;
+    background-color: #127780;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.action-btn:hover {
+    background-color: #0e5e5f;
+}
+
+/* Bottom Navigation Menu */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #333;
+    padding: 10px 0;
+}
+
+.bottom-menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.bottom-menu-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-label {
+    font-size: 10px;
+    color: white;
+    margin-top: 3px;
+}
+
+.bottom-menu-item:hover {
+    background-color: #127780;
+    border-radius: 4px;
+}
